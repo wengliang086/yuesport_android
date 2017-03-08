@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_column_week"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dip"
+    android:scrollbars="none"
+    android:background="@color/bg_gray"
+    android:visibility="invisible"
+    android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/mRadioGroup_content"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        />
+</HorizontalScrollView>

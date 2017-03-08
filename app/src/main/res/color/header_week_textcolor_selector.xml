@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 微博列表界面tab栏的点击时文字颜色，可随触摸事件变化 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:color="@color/white" />
+    <item android:state_pressed="true" android:color="@color/white" />
+    <item android:state_selected="true" android:color="@color/white" />
+    <item android:color="@color/header_week_gray" />
+</selector>

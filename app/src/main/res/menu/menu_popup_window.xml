@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/zoom_item1"
+        android:title="@string/zoom_item1"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/zoom_item2"
+        android:title="@string/zoom_item2"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

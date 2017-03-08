@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context = ".ui.PitchDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/primary"
+        >
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity ="center_horizontal"
+            android:text="球场详情"
+            android:textSize="@dimen/title_text_size"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <include
+        android:id="@+id/head_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        layout="@layout/head_item"
+        android:layout_below="@id/toolbar"
+        >
+    </include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/head_image_view">
+        <TextView
+            android:id="@+id/pitch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新奥体育公园足球场"
+            android:background="@color/bg_gray"
+            style="@style/pay_item_style_header"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="电话"
+                style="@style/pay_item_style_header"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/pitch_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/pay_item_style"
+                android:text="18701425587"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="地址"
+                style="@style/pay_item_style_header"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/pitch_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/pay_item_style"
+                android:text="海淀区西二旗"
+                />
+        </RelativeLayout>
+        <include layout="@layout/line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/pitch_desc_title"
+                android:layout_width="wrap_content"
+                android:text="场地介绍"
+                style="@style/pay_item_style_header"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/pitch_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pitch_desc_title"
+                style="@style/pay_item_style"
+                android:text="海淀区西二旗"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/port_icon"
+                    android:drawablePadding="3dp"
+                    android:text="停车场"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/vip_icon"
+                    android:text="会员卡"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/rest_icon"
+                    android:text="更衣室"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/wifi"
+                    android:text="wifi"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <include layout="@layout/line"></include>
+
+        <!--显示星期天-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_column"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/bg_gray"
+                android:orientation="horizontal" >
+                <com.football.yuedong.happysports.widget.viewimage.ColumnHorizontalScrollView
+                    android:id="@+id/column_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/mRadioGroup_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip" />
+                </com.football.yuedong.happysports.widget.viewimage.ColumnHorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/shade_left"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/header_week_selector"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/shade_right"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/header_week_selector"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/category_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdddddd" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:background="@color/bg_gray"
+                android:dividerHeight="0.5px"></ListView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pitch_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="预定场地"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/btn_no_solid_yellow"/>
+    </LinearLayout>
+
+</RelativeLayout>

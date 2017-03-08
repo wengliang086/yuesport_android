@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#dcdcdc</color>
+    <color name="bg_color">#e62f17</color>
+    <color name="bg_gray">#f0f3fa</color>
+    <color name="title_text_color">#E0C501</color>
+
+    <color name="bottom_text_dark">#4d5a83</color>
+    <color name="bottom_text_light">#969696</color>
+
+    <color name="header_week_gray">#999999</color>
+
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="bottom_text_color">#969696</color>
+
+
+
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="black_de">#DE000000</color>
+    <color name="accent">#eeff41</color>
+
+    <color name="primary">#333E61</color>
+    <color name="primaryDark">#2D3859</color>
+    <color name="accentLight">#F4FF81</color>
+    <color name="transparent">#00000000</color>
+    <color name="theme_primary">#333E61</color>
+
+    <color name="ranking_tag">#ff475787</color>
+
+    <color name="gray_text">#b7b7b7</color>
+
+    <color name="item_cell_pressed">#33c47d</color>
+
+    <color name="header_week_normal">#d7d7d7</color>
+    <color name="header_week_seected">#33c47d</color>
+
+    <color name="header_under_line_dark">#23aa68</color>
+
+</resources>

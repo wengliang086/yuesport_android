@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.football.yuedong.happysports.widget.viewimage.Indicators.RankingPagerIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:background="@drawable/tab_ranking_left_selector"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:background="@drawable/tab_ranking_center_selector"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:background="@drawable/tab_ranking_right_selector"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </com.football.yuedong.happysports.widget.viewimage.Indicators.RankingPagerIndicator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

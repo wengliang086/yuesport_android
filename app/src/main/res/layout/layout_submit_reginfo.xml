@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        fresco:placeholderImage="@drawable/avatar01"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="normal"
+            android:layout_weight="0.84"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="8dp"
+            android:hint="身高"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/user_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:met_floatingLabel="normal"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:hint="体重"
+            />
+    </LinearLayout>
+
+
+    <include layout="@layout/line"></include>
+
+    <RadioGroup
+        android:id="@+id/male_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="男"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女"/>
+    </RadioGroup>
+
+    <include layout="@layout/line"></include>
+
+    <RadioGroup
+        android:id="@+id/foot_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="左脚"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="右脚"/>
+    </RadioGroup>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/expert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_floatingLabel="normal"
+        android:hint="擅长位置"
+        />
+
+    <TextView
+            android:id="@+id/done_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:padding="5dp"
+            style="@style/pay_item_style_header"
+            android:background="@color/bg_gray"
+            android:gravity="center"
+            android:layout_below="@id/item_content"/>
+
+</LinearLayout>

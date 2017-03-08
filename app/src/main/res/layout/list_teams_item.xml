@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="13dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/team_header"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        fresco:roundAsCircle="true"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:roundedCornerRadius="180dp"
+        fresco:placeholderImage="@drawable/avatar01"
+         />
+
+    <LinearLayout
+        android:id="@+id/pitch_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/team_header"
+        android:duplicateParentState="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:duplicateParentState="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:text="信威通信集团公司"
+            android:singleLine="true"
+            android:padding="3dp"
+            android:typeface="monospace"
+            android:textSize="18.0sp" />
+		<TextView
+            android:id="@+id/team_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:padding="3dp"
+            android:gravity="center_vertical"
+            android:maxEms="12"
+            android:text="400s"
+            android:drawableLeft="@drawable/location_icon"
+            android:textSize="14.0sp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pitch_layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/team_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="14.0sp" />
+        <TextView
+            android:id="@+id/joined"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_no_solid_yellow"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

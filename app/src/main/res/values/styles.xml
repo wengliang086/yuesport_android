@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/bg_color</item>
+      <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="android:textColorPrimary">@color/title_text_color</item>
+
+    </style>
+
+
+
+    <style name="Theme.Sports.Start" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/Theme.AppCompat.NoActionBar</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/start_login_bg</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Sports" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:itemTextAppearance">@style/ActionBar.Transparent.Sports.Item</item>
+        <item name="android:listViewStyle">@style/Theme.Sports.ListView</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector</item>
+        <item name="android:editTextStyle">@style/Theme.Sports.EditText</item>
+        <item name="android:actionBarItemBackground">@drawable/bar_selector_style</item>
+    </style>
+
+    <style name="Theme.Sports.PopupNotification" parent="Theme.Sports">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- POPUP -->
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <!--ACTION BAR ITEMS-->
+
+    <style name="ActionBar.Transparent.Sports.Item" parent="android:TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--LIST VIEW-->
+
+    <style name="Theme.Sports.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@color/divider</item>
+    </style>
+
+    <!--EDIT TEXT-->
+
+    <style name="Theme.Sports.EditText" parent="android:Widget.EditText">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--ALERT DIALOG-->
+
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@anim/no_animation</item>
+        <item name="android:windowExitAnimation">@anim/no_animation</item>
+    </style>
+
+    <style name="bottom_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:textColor">@drawable/bottom_textcolor_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar -->
+        <item name="searchBackground">@color/primary</item>
+
+        <!-- Change voice icon -->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search_inverted</item>
+
+        <!-- Change clear text icon -->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+
+        <!-- Change up icon -->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+
+        <!-- Change icon for the suggestions -->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view -->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/title_text_color</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/title_text_color</item>
+
+        <!-- Hint for edit text -->
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+
+    <style name="pay_item_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="pay_item_style_header">
+    <item name="android:textSize">16sp</item>
+    <item name="android:padding">5dp</item>
+    <item name="android:typeface">sans</item>
+    <item name="android:textColor">@color/black_de</item>
+</style>
+
+
+
+</resources>
